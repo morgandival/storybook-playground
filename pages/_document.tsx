@@ -9,7 +9,7 @@ const MyDocument = () => {
         <meta name="author" content="Morgan Di Val" />
       </Head>
       <body>
-        <Header />
+        <Header backgroundColor={'#ebe'} />
         <Main />
         <Footer />
         <NextScript />

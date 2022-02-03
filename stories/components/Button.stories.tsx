@@ -10,7 +10,7 @@ export default {
     backgroundColor: { control: 'color' },
     size: {
       control: 'radio',
-      options: ['sm', 'md', 'lg']
+      options: ['small', 'medium', 'large']
     }
   }
 } as ComponentMeta<typeof Button>;
