@@ -1,9 +1,21 @@
 import React from 'react';
+import Button from '../components/Button';
 
-const Header = () => {
+// @ts-ignore
+const Header = ({ backgroundColor }) => {
+  const style = {
+    backgroundColor: backgroundColor
+  };
+
   return (
-    <header>
+    <header style={style}>
       <h1>This is a header!</h1>
+      <Button
+        label="Get lost!"
+        backgroundColor="purple"
+        size="sm"
+        onClick={() => console.log('Clicked')}
+      />
     </header>
   );
 };
