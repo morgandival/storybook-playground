@@ -2,7 +2,7 @@ import React, { EventHandler, MouseEventHandler } from 'react';
 import Button from '../components/Button';
 
 // @ts-ignore
-const Header = ({ backgroundColor }) => {
+const Header = ({ primary, backgroundColor }) => {
   const style = {
     backgroundColor: backgroundColor
   };

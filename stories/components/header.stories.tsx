@@ -6,6 +6,7 @@ export default {
   title: 'Components/Header',
   component: Header,
   argTypes: {
+    primary: { control: 'boolean' },
     backgroundColor: { control: 'color' }
   }
 } as ComponentMeta<typeof Header>;
@@ -13,7 +14,10 @@ export default {
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = { backgroundColor: '#ebe' };
+Primary.args = {
+  primary: true,
+  backgroundColor: '#ebe'
+};
 
 export const Secondary = Template.bind({});
-Secondary.args = { backgroundColor: '#beb' };
+Secondary.args = { primary: false, backgroundColor: '#beb' };
